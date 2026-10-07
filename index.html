@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta name="theme-color" content="#070707" />
+
+  <title>HYPSWAP — Decentralized Swap</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+
+      <section class="main-layout">
+
+        <!-- =========================
+             SWAP
+        ========================== -->
+
+        <section
+          id="swap"
+          class="swap-section"
+          aria-label="Uniswap Swap"
+        >
+
+          <div class="swap-shell">
+
+            <iframe
+              src="https://app.uniswap.org/embed?view=swap"
+              title="Uniswap"
+              width="480"
+              height="640"
+              style="border: none;"
+              loading="lazy"
+              allow="clipboard-write; clipboard-read; web-share"
+            ></iframe>
+
+          </div>
+
+        </section>
+
+
+        <!-- =========================
+             NARRATIVE
+        ========================== -->
+
+        <section class="copy-column">
+
+          <!-- Mascot -->
+          <div class="mascot-wrap">
+
+            <img
+              src="hypswap_mascot_x.png"
+              alt="HYPSWAP Mascot"
+              class="mascot"
+            />
+
+          </div>
+
+
+          <!-- Eyebrow -->
+          <div class="eyebrow">
+            Decentralized Swap
+          </div>
+
+
+          <!-- Main headline -->
+          <h1>
+            Let assets find their own way
+            on the blockchain.
+          </h1>
+
+
+          <!-- Tagline -->
+          <p class="tagline">
+            HYPSWAP — where assets move freely,
+            directly on the blockchain, without
+            unnecessary limits.
+          </p>
+
+
+          <!-- =========================
+               CONTRACT ADDRESS
+          ========================== -->
+
+          <section
+            id="contract"
+            class="contract-wrap"
+            aria-label="HYPS Contract Address"
+          >
+
+            <div class="contract">
+
+              <!--
+                GANTI VALUE INI DENGAN CA HYPS ASLI.
+
+                JavaScript akan mengambil seluruh
+                textContent dari element ini.
+              -->
+              <span>$HYPS' CA:</span>
+              <span
+                class="contract-address"
+                id="contractAddress"
+                title="HYPS Contract Address"
+              >0xB14blaB14blaB14blaB14blaB14blaB14bla</span>
+
+
+              <button
+                type="button"
+                class="copy-btn"
+                id="copyButton"
+                aria-label="Copy HYPS contract address"
+              >
+                COPY
+              </button>
+
+            </div>
+
+          </section>
+
+        </section>
+
+      </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer id="community">
+
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand-column">
+
+          <div class="footer-brand">
+            HYPSWAP
+          </div>
+
+          <p class="footer-description">
+            A decentralized swap interface for moving
+            assets directly through blockchain infrastructure.
+          </p>
+
+        </div>
+
+
+        <!-- Explore -->
+        <div>
+
+          <div class="footer-title">
+            Explore
+          </div>
+
+          <div class="footer-links">
+
+            <a href="https://ponsfamily.com/launchpad/0xBlaBlaBlaBlaBla" target="_blank" rel="noopener noreferrer">
+              PONSFamily
+            </a>
+
+            <a href="https://app.uniswap.org/swap?chain=robinhood&outputCurrency=0xBlaBlaBlaBlaBla" target="_blank" rel="noopener noreferrer">
+              UniSwap
+            </a>
+
+            <!-- <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Documentation
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Analytics
+            </a> -->
+
+          </div>
+
+        </div>
+
+
+        <!-- Community -->
+        <div>
+
+          <div class="footer-title">
+            Community
+          </div>
+
+          <div class="footer-links">
+
+            <a
+              href="https://x.com/HypSwap"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              X/Twitter
+            </a>
+
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Telegram
+            </a>
+
+            <!-- <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Discord
+            </a> -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © 2026 <a href="https://hypswap.org">HYPSWAP</a>
+        </span>
+
+        <span>
+          Decentralized by design.
+        </span>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  <!-- COPY TOAST -->
+
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite"
+  >
+    Contract address copied
+  </div>
+
+</body>
+</html>
